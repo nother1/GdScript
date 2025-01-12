@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://p7eggcg43rkl"]
+
+[ext_resource type="PackedScene" uid="uid://ey5v4r7hjy5j" path="res://Escenas/nyanCat.tscn" id="1_2p5b5"]
+[ext_resource type="PackedScene" uid="uid://bxm23g5o31um7" path="res://Escenas/obstaculo.tscn" id="2_8lbro"]
+
+[node name="Mundo" type="Node2D"]
+
+[node name="Jugador" type="Node" parent="."]
+
+[node name="NyanCat" parent="Jugador" instance=ExtResource("1_2p5b5")]
+
+[node name="Obstaculos" type="Node" parent="."]
+
+[node name="Estrella" parent="Obstaculos" instance=ExtResource("2_8lbro")]
+position = Vector2(427, 125)
+
+[node name="InterfazJugador" type="Node" parent="."]
+
+[node name="infromacionVida" type="Label" parent="InterfazJugador"]
+offset_left = 314.0
+offset_top = 45.0
+offset_right = 354.0
+offset_bottom = 68.0

@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bxm23g5o31um7"]
+
+[ext_resource type="Script" path="res://Scripts/Estrella.gd" id="1_p1nfc"]
+[ext_resource type="Texture2D" uid="uid://cn5mkuyu3wlt1" path="res://Imgenes/purepng.com-silver-starsilverchemical-elementshinywhitetomic-number-47metal-1701528983642e1tik.png" id="1_qq80p"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_j2iv2"]
+radius = 22.561
+
+[node name="Estrella" type="CharacterBody2D" groups=["Estrellas"]]
+script = ExtResource("1_p1nfc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 2)
+shape = SubResource("CircleShape2D_j2iv2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(2.86102e-06, 0)
+scale = Vector2(0.0244141, 0.0244141)
+texture = ExtResource("1_qq80p")
